@@ -854,7 +854,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
 
 	// 🔥 %[1]s = Mode, %[2]s = Uptime, %[3]s = Prefix 
 	// اس ٹرک کی وجہ سے ہمیں بار بار settings.Prefix نہیں لکھنا پڑے گا!
-	menu := fmt.Sprintf(`❖ ── ✦ HINA X LEGEND 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹✦ ── ❖
+	menu := fmt.Sprintf(`❖ ── ✦ HINA X  LEGEND 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹✦ ── ❖
  
  👤 𝗢𝘄𝗻𝗲𝗿: HINA❤️X🔥LEGEND🔥
  ⚙️ 𝗠𝗼𝗱𝗲: %[1]s
@@ -1094,7 +1094,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  ╰──────────────────────╯
 
 
-  ⚡━ ✦ 💖 HINA❤️X❤️ 🔥LEGEND 🔥💖 ✦ ━ ⚡`, 
+  ⚡━ ✦ 💖 HINA❤️X❤️ 🔥LEGEND 🔥`,  💖 ✦ ━ ⚡`, 
 	strings.ToUpper(settings.Mode), uptimeStr, settings.Prefix)
 
 	client.SendMessage(context.Background(), v.Info.Chat, &waProto.Message{
