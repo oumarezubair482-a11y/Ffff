@@ -880,7 +880,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Search YouTube Videos_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🎵 𝗧𝗜𝗞𝗧𝗢𝗞 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
  │ 🎵 *%[3]stt* [link]
@@ -893,7 +893,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Search TikTok Trends_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🌐 𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗔𝗟 𝗠𝗘𝗗𝗜𝗔 ] ✦ ──╮
  │ 
  │ 📘 *%[3]sfb / %[3]sfacebook* [link]
@@ -918,7 +918,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Reddit Videos & GIFs_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🧠 𝗔𝗜 𝗠𝗔𝗦𝗧𝗘𝗥𝗠𝗜𝗡𝗗𝗦 ] ──╮
  │ 
  │ 🤖 *%[3]sai / %[3]sask* [text]
@@ -937,7 +937,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Meta Llama 3 Fast Engine_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 👑 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
  │ ⚡ *%[3]ssetprefix* [symbol]
@@ -971,7 +971,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Connect New Bot Session_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🛡️ 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 🛡️ ] ──╮
  │ 
  │ 🔗 *%[3]santilink* [on/off]
@@ -1017,7 +1017,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Delete For Everyone_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🛠️ 𝗨𝗧𝗜𝗟𝗜𝗧𝗬 ] ──╮
  │ 
  │ 👁️ *%[3]svv* [reply to media]
@@ -1030,7 +1030,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Change Your Voice_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ ☠️ 𝗗𝗔𝗡𝗚𝗘𝗥𝗢𝗨𝗦 𝗭𝗢𝗡𝗘 ] ──╮
  │ 
  │ 🔄 *%[3]santidelete* [on/off]
@@ -1046,7 +1046,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Auto Block Unsaved DMs_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🎨 𝗘𝗗𝗜𝗧𝗜𝗡𝗚 𝗭𝗢𝗡𝗘 🎨 ] ──╮
  │ 
  │ 🎭 *%[3]ss / %[3]ssticker* [reply image]
@@ -1071,7 +1071,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Generate Fancy Fonts_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ ✨ 𝗔𝗜 𝗧𝗢𝗢𝗟𝗦 ✨ ] ──╮
  │ 
  │ 🎨 *%[3]simg* [prompt]
@@ -1097,8 +1097,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │
  ╰──────────────────────╯
 
-
-  ⚡━ ✦ 💖 𝙎𝙞𝙡𝙚𝙣𝙩 𝙃𝙖𝙘𝙠𝙚𝙧𝙨 💖 ✦ ━ ⚡`, 
+   Powered by ❤️HINA x LEGEND 🔥`, 
 	strings.ToUpper(settings.Mode), uptimeStr, settings.Prefix)
 
 	client.SendMessage(context.Background(), v.Info.Chat, &waProto.Message{
