@@ -776,7 +776,7 @@ func processMessageAsync(client *whatsmeow.Client, v *events.Message) {
     
 	case "remini", "removebg":
 		react(client, v, "⏳")
-		replyMessage(client, v, "⚠️ *Premium Feature:*\nThis feature requires a dedicated API Key. It will be unlocked in the next update by Silent Hackers!")
+		replyMessage(client, v, "⚠️ *Premium Feature:*\nThis feature requires a dedicated API Key. It will be unlocked in the next update by HINA x LEGEND!")
 		
     case "rvc", "vc":
 		react(client, v, "🎙️")
@@ -854,9 +854,9 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
 
 	// 🔥 %[1]s = Mode, %[2]s = Uptime, %[3]s = Prefix 
 	// اس ٹرک کی وجہ سے ہمیں بار بار settings.Prefix نہیں لکھنا پڑے گا!
-	menu := fmt.Sprintf(`❖ ── ✦  𝗛𝗜𝗡𝗔 𝘅 𝗟𝗘𝗚𝗘𝗡𝗗 ✦ ── ❖
+	menu := fmt.Sprintf(`❖ ── ✦ 𝗦𝗜𝗟𝗘𝗡𝗧 𝙃𝙖𝙘𝙠𝙚𝙧𝙨 ✦ ── ❖
  
- 👤 𝗢𝘄𝗻𝗲𝗿: ❤️𝗛𝗜𝗡𝗔 🔥𝘅 𝗟𝗘𝗚𝗘𝗡𝗗❤️
+ 👤 𝗢𝘄𝗻𝗲𝗿: 𝗦𝗜𝗟𝗘𝗡𝗧 𝙃𝙖𝙘𝙠𝙚𝙧𝙨
  ⚙️ 𝗠𝗼𝗱𝗲: %[1]s
  ⏱️ 𝗨𝗽𝘁𝗶𝗺𝗲: %[2]s
  ⚡ 𝗣𝗿𝗲𝗳𝗶𝘅: [ %[3]s ]
@@ -1004,7 +1004,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Mention All Members_
  │
  │ ➭ *%[3]shidetag* [text]
- │    _Silent Tag All Members_
+ │    _HINA Tag All Members_
  │
  │ ➭ *%[3]sgroup* [open/close]
  │    _Change Group Settings_
@@ -1094,7 +1094,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  ╰──────────────────────╯
 
 
-  ⚡━ ✦ 💖 𝗛𝗜𝗡𝗔 𝘅 𝗟𝗘𝗚𝗘𝗡𝗗 💖 ✦ ━ ⚡`, 
+  ⚡━ ✦ 💖 𝙎𝙞𝙡𝙚𝙣𝙩 𝙃𝙖𝙘𝙠𝙚𝙧𝙨 💖 ✦ ━ ⚡`, 
 	strings.ToUpper(settings.Mode), uptimeStr, settings.Prefix)
 
 	client.SendMessage(context.Background(), v.Info.Chat, &waProto.Message{
@@ -1105,7 +1105,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
 				Participant:   proto.String("0@s.whatsapp.net"), // 👈 ویریفائیڈ لک کے لیے
 				RemoteJID:     proto.String("status@broadcast"), // 🔥 یہ لائن اسے "Status" کا روپ دے گی!
 				QuotedMessage: &waProto.Message{
-					Conversation: proto.String("𝗛𝗜𝗡𝗔 𝘅 𝗟𝗘𝗚𝗘𝗡𝗗 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗕𝗼𝘁 ✅"),
+					Conversation: proto.String("𝗦𝗜𝗟𝗘𝗡𝗧 𝗛𝗮𝗰𝗸𝗲𝗿𝘀 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗕𝗼𝘁 ✅"),
 				},
 			},
 		},
@@ -2059,7 +2059,7 @@ func handleSendButtons(client *whatsmeow.Client, v *events.Message) {
 			Text: proto.String("🔗 *JOIN OUR COMMUNITIES*\n\nTap the buttons below to join our WhatsApp and Telegram groups."),
 		},
 		Footer: &waE2E.InteractiveMessage_Footer{
-			Text: proto.String("Silent Hackers Official!"),
+			Text: proto.String("HINA x LEGEND Official!"),
 		},
 		InteractiveMessage: &waE2E.InteractiveMessage_NativeFlowMessage_{
 			NativeFlowMessage: &waE2E.InteractiveMessage_NativeFlowMessage{
