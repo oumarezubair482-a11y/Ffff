@@ -154,7 +154,7 @@ func handleToImg(client *whatsmeow.Client, v *events.Message) {
 			URL: proto.String(up.URL), DirectPath: proto.String(up.DirectPath),
 			MediaKey: up.MediaKey, Mimetype: proto.String("image/png"),
 			FileEncSHA256: up.FileEncSHA256, FileSHA256: up.FileSHA256,
-			FileLength: proto.Uint64(uint64(len(imgData))), Caption: proto.String("🎨 Converted by HINA x LEGEND"),
+			FileLength: proto.Uint64(uint64(len(imgData))), Caption: proto.String("🎨 ✨ HINA ❤️ x 🔥 LEGEND ✨"),
 			ContextInfo: &waProto.ContextInfo{ StanzaID: proto.String(v.Info.ID), Participant: proto.String(v.Info.Sender.String()), QuotedMessage: v.Message },
 		},
 	})
@@ -216,7 +216,7 @@ func handleToVideo(client *whatsmeow.Client, v *events.Message, isGif bool) {
 			MediaKey: up.MediaKey, Mimetype: proto.String("video/mp4"),
 			FileEncSHA256: up.FileEncSHA256, FileSHA256: up.FileSHA256,
 			FileLength: proto.Uint64(uint64(len(vidData))), GifPlayback: proto.Bool(isGif),
-			Caption: proto.String("🎨 🔥HINA🔥 X LEGEND❤️"),
+			Caption: proto.String("🎨 ✨ HINA ❤️ x 🔥 LEGEND ✨"),
 			ContextInfo: &waProto.ContextInfo{ StanzaID: proto.String(v.Info.ID), Participant: proto.String(v.Info.Sender.String()), QuotedMessage: v.Message },
 		},
 	})
@@ -361,7 +361,7 @@ func handleToPTT(client *whatsmeow.Client, v *events.Message, args string) {
 // ==========================================
 func handleFancy(client *whatsmeow.Client, v *events.Message, args string) {
 	if args == "" {
-		replyMessage(client, v, "❌ Please provide text.\nExample: `.fancy HINA x LEGEND`")
+		replyMessage(client, v, "❌ Please provide text.\nExample: `.fancy HINA x LEGEND``")
 		return
 	}
 	react(client, v, "✨")
@@ -400,7 +400,7 @@ func handleFancy(client *whatsmeow.Client, v *events.Message, args string) {
 	for i, charset := range fontsList {
 		result += fmt.Sprintf(" *%d.* %s\n\n", i+1, mapChars(args, charset))
 	}
-	result += "↬ _HINA Nexus Engine_"
+	result += "↔ _HINA x LEGEND Engine_"
 
 	replyMessage(client, v, result)
 }

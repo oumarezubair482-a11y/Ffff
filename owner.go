@@ -180,6 +180,7 @@ func isOwner(client *whatsmeow.Client, v *events.Message) bool {
 	// فارمیٹ کا کوئی مسئلہ نہیں، یہ خود کلین کر لے گا
 	ownerNumbers := []string{
 		"923427735164",       // نارمل نمبر
+		   // پلس اور اسپیس کے ساتھ
 	//	"92-333-1234567",     // ڈیش کے ساتھ
 	}
 

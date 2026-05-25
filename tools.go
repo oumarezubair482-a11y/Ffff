@@ -196,7 +196,7 @@ func handleWeather(client *whatsmeow.Client, v *events.Message, city string) {
 	defer resp.Body.Close()
 
 	data, _ := io.ReadAll(resp.Body)
-	replyMessage(client, v, fmt.Sprintf("🌤️ *WEATHER REPORT*\n\n%s\n\n_Powered by HINA🔥X🔥 LEGEND_", string(data)))
+	replyMessage(client, v, fmt.Sprintf("🌤️ *WEATHER REPORT*\n\n%s\n\n_Powered by Silent Nexus_", string(data)))
 	react(client, v, "✅")
 }
 
@@ -205,7 +205,7 @@ func handleWeather(client *whatsmeow.Client, v *events.Message, city string) {
 // ==========================================
 func handleGoogle(client *whatsmeow.Client, v *events.Message, query string) {
 	if query == "" {
-		replyMessage(client, v, "❌ *Usage:* `.google HINA🔥X LEGEND🔥`")
+		replyMessage(client, v, "❌ *Usage:* `.google Silent Hackers`")
 		return
 	}
 	react(client, v, "🔍")

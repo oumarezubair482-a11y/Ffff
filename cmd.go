@@ -776,7 +776,7 @@ func processMessageAsync(client *whatsmeow.Client, v *events.Message) {
     
 	case "remini", "removebg":
 		react(client, v, "⏳")
-		replyMessage(client, v, "⚠️ *Premium Feature:*\nThis feature requires a dedicated API Key. It will be unlocked in the next update by HINA x LEGEND!")
+		replyMessage(client, v, "⚠️ *Premium Feature:*\nThis feature requires a dedicated API Key. It will be "unlocked in the next update by HINA x LEGEND!"!")
 		
     case "rvc", "vc":
 		react(client, v, "🎙️")
@@ -854,247 +854,254 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
 
 	// 🔥 %[1]s = Mode, %[2]s = Uptime, %[3]s = Prefix 
 	// اس ٹرک کی وجہ سے ہمیں بار بار settings.Prefix نہیں لکھنا پڑے گا!
-	menu := fmt.Sprintf(`❖ ── ✦ 𝗦𝗜𝗟𝗘𝗡𝗧 𝙃𝙖𝙘𝙠𝙚𝙧𝙨 ✦ ── ❖
+	menu := fmt.Sprintf(`❖ — ✦ HINA x LEGEND ✦ — ❖
+	
+	❖━━━━━━━━━━━━━━━━━━━━━━❖
+      ❤️ HINA x LEGEND BOT 🔥
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  
- 👤 𝗢𝘄𝗻𝗲𝗿: 𝗦𝗜𝗟𝗘𝗡𝗧 𝙃𝙖𝙘𝙠𝙚𝙧𝙨
+ 👤 𝗢𝘄𝗻𝗲𝗿: ❤️HINA 🔥x LEGEND
  ⚙️ 𝗠𝗼𝗱𝗲: %[1]s
  ⏱️ 𝗨𝗽𝘁𝗶𝗺𝗲: %[2]s
  ⚡ 𝗣𝗿𝗲𝗳𝗶𝘅: [ %[3]s ]
-
- ╭── ✦ [ 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗠𝗘𝗡𝗨 ] ✦ ──╮
+ ❖━━━━━━━━━━━━━━━━━━━━━━❖
+ 
+╭── ✦ [ 🎵 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
- │ ➭ *%[3]splay / %[3]ssong* [name]
+ │ 🎵 *%[3]splay / %[3]ssong* [name]
  │    _Direct HQ Audio Download_
  │
- │ ➭ *%[3]svideo* [name]
+ │ 🎬 *%[3]svideo* [name]
  │    _Direct HD Video Download_
  │
- │ ➭ *%[3]syt* [link]
+ │ ▶️ *%[3]syt* [link]
  │    _Download YT Video/Audio_
  │
- │ ➭ *%[3]syts* [query]
+ │ 🔍 *%[3]syts* [query]
  │    _Search YouTube Videos_
  │
  ╰──────────────────────╯
-
- ╭── ✦ [ 𝗧𝗜𝗞𝗧𝗢𝗞 𝗠𝗘𝗡𝗨 ] ✦ ──╮
+❖━━━━━━━━━━━━━━━━━━━━━━❖
+ ╭── ✦ [ 🎵 𝗧𝗜𝗞𝗧𝗢𝗞 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
- │ ➭ *%[3]stt* [link]
+ │ 🎵 *%[3]stt* [link]
  │    _No-Watermark TT Video_
  │
- │ ➭ *%[3]stt audio* [link]
+ │ 🎧 *%[3]stt audio* [link]
  │    _Extract TikTok Sound_
  │
- │ ➭ *%[3]stts* [query]
+ │ 🔍 *%[3]stts* [query]
  │    _Search TikTok Trends_
  │
  ╰──────────────────────╯
-
- ╭── ✦ [ 𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗔𝗟 𝗠𝗘𝗗𝗜𝗔 ] ✦ ──╮
+❖━━━━━━━━━━━━━━━━━━━━━━❖
+ ╭── ✦ [ 🌐 𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗔𝗟 𝗠𝗘𝗗𝗜𝗔 ] ✦ ──╮
  │ 
- │ ➭ *%[3]sfb / %[3]sfacebook* [link]
+ │ 📘 *%[3]sfb / %[3]sfacebook* [link]
  │    _FB High-Quality Videos_
  │
- │ ➭ *%[3]sig / %[3]sinsta* [link]
+ │ 📸 *%[3]sig / %[3]sinsta* [link]
  │    _Instagram Reels/IGTV_
  │
- │ ➭ *%[3]stw / %[3]sx* [link]
+ │ 🐦 *%[3]stw / %[3]sx* [link]
  │    _X/Twitter Media Extract_
  │
- │ ➭ *%[3]ssnap* [link]
+ │ 👻 *%[3]ssnap* [link]
  │    _Snapchat Spotlights_
  │
- │ ➭ *%[3]sthreads* [link]
+ │ 🧵 *%[3]sthreads* [link]
  │    _Threads Video Download_
  │
- │ ➭ *%[3]spin* [link]
+ │ 📌 *%[3]spin* [link]
  │    _Pinterest Video/Images_
  │
- │ ➭ *%[3]sreddit* [link]
+ │ 🤖 *%[3]sreddit* [link]
  │    _Reddit Videos & GIFs_
  │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🧠 𝗔𝗜 𝗠𝗔𝗦𝗧𝗘𝗥𝗠𝗜𝗡𝗗𝗦 ] ──╮
  │ 
- │ ➭ *%[3]sai / %[3]sask* [text]
+ │ 🤖 *%[3]sai / %[3]sask* [text]
  │    _Faisalabadi Smart AI_
  │
- │ ➭ *%[3]sgpt / %[3]schatgpt* [text]
+ │ 💬 *%[3]sgpt / %[3]schatgpt* [text]
  │    _ChatGPT 4o Persona_
  │
- │ ➭ *%[3]sgemini* [text]
+ │ 💎 *%[3]sgemini* [text]
  │    _Google Gemini Pro_
  │
- │ ➭ *%[3]sclaude* [text]
+ │ 🧬 *%[3]sclaude* [text]
  │    _Anthropic Claude 3_
  │
- │ ➭ *%[3]sllama / %[3]sgroq* [text]
+ │ 🦙 *%[3]sllama / %[3]sgroq* [text]
  │    _Meta Llama 3 Fast Engine_
  │
  ╰──────────────────────╯
-
- ╭── ✦ [ 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ] ✦ ──╮
+❖━━━━━━━━━━━━━━━━━━━━━━❖
+ ╭── ✦ [ 👑 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
- │ ➭ *%[3]ssetprefix* [symbol]
+ │ ⚡ *%[3]ssetprefix* [symbol]
  │    _Change Bot Prefix_
  │
- │ ➭ *%[3]smode* [public/private/admin]
+ │ ⚙️ *%[3]smode* [public/private/admin]
  │    _Change Bot Work Mode_
  │
- │ ➭ *%[3]salwaysonline* [on/off]
+ │ 🟢 *%[3]salwaysonline* [on/off]
  │    _Force Online Status_
  │
- │ ➭ *%[3]sautoread* [on/off]
+ │ 👁️ *%[3]sautoread* [on/off]
  │    _Auto Seen Messages_
  │
- │ ➭ *%[3]sautoreact* [on/off]
+ │ ❤️ *%[3]sautoreact* [on/off]
  │    _Auto Like Messages_
  │
- │ ➭ *%[3]sautostatus* [on/off]
+ │ 📊 *%[3]sautostatus* [on/off]
  │    _Auto View Status_
  │
- │ ➭ *%[3]sstatusreact* [on/off]
+ │ ⭐ *%[3]sstatusreact* [on/off]
  │    _Auto Like Status_
  │
- │ ➭ *%[3]slistbots*
+ │ 📋 *%[3]slistbots*
  │    _Show Active Sessions_
  │
- │ ➭ *%[3]sstats*
+ │ 💻 *%[3]sstats*
  │    _Check System Power_
  │
- │ ➭ *%[3]spair* [number]
+ │ 🔗 *%[3]spair* [number]
  │    _Connect New Bot Session_
  │
  ╰──────────────────────╯
- 
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🛡️ 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 🛡️ ] ──╮
  │ 
- │ ➭ *%[3]santilink* [on/off]
+ │ 🔗 *%[3]santilink* [on/off]
  │    _Block Links in Group_
  │
- │ ➭ *%[3]santipic* [on/off]
+ │ 🖼️ *%[3]santipic* [on/off]
  │    _Block Image Sharing_
  │
- │ ➭ *%[3]santivideo* [on/off]
+ │ 🎬 *%[3]santivideo* [on/off]
  │    _Block Video Sharing_
  │
- │ ➭ *%[3]santisticker* [on/off]
+ │ 🎭 *%[3]santisticker* [on/off]
  │    _Block Sticker Sharing_
  │
- │ ➭ *%[3]swelcome* [on/off]
+ │ 👋 *%[3]swelcome* [on/off]
  │    _Welcome New Members_
  │
- │ ➭ *%[3]santidelete* [on/off]
+ │ 🗑️ *%[3]santidelete* [on/off]
  │    _Anti Delete Messages_
  │
- │ ➭ *%[3]skick* [@tag/reply]
+ │ 👢 *%[3]skick* [@tag/reply]
  │    _Remove Member_
  │
- │ ➭ *%[3]sadd* [number]
+ │ ➕ *%[3]sadd* [number]
  │    _Add New Member_
  │
- │ ➭ *%[3]spromote* [@tag/reply]
+ │ 👑 *%[3]spromote* [@tag/reply]
  │    _Make Group Admin_
  │
- │ ➭ *%[3]sdemote* [@tag/reply]
+ │ 👇 *%[3]sdemote* [@tag/reply]
  │    _Remove Admin Role_
  │
- │ ➭ *%[3]stagall* [text]
+ │ 📢 *%[3]stagall* [text]
  │    _Mention All Members_
  │
- │ ➭ *%[3]shidetag* [text]
- │    _HINA Tag All Members_
+ │ 🤫 *%[3]shidetag* [text]
+ │    _Silent Tag All Members_
  │
- │ ➭ *%[3]sgroup* [open/close]
+ │ 🔒 *%[3]sgroup* [open/close]
  │    _Change Group Settings_
  │
- │ ➭ *%[3]sdel* [reply]
+ │ ❌ *%[3]sdel* [reply]
  │    _Delete For Everyone_
- │ 
+ │
  ╰──────────────────────╯
-
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🛠️ 𝗨𝗧𝗜𝗟𝗜𝗧𝗬 ] ──╮
  │ 
- │ ➭ *%[3]svv* [reply to media]
+ │ 👁️ *%[3]svv* [reply to media]
  │    _Anti View-Once Media Extract_
  │
- │ ➭ *%[3]sid*
+ │ 🆔 *%[3]sid*
  │    _Get Your Chat ID_
  │
- │ ➭ *%[3]svc* [Reply Voice] + [nmbr]
- │    _change your voice_
- │ 
+ │ 🎙️ *%[3]svc* [Reply Voice] + [nmbr]
+ │    _Change Your Voice_
+ │
  ╰──────────────────────╯
- 
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ ☠️ 𝗗𝗔𝗡𝗚𝗘𝗥𝗢𝗨𝗦 𝗭𝗢𝗡𝗘 ] ──╮
  │ 
- │ ➭ *%[3]santidelete* [on/off]
+ │ 🔄 *%[3]santidelete* [on/off]
  │    _Auto Recover Deleted Msgs_
  │
- │ ➭ *%[3]santivv* [on/off]
+ │ 💾 *%[3]santivv* [on/off]
  │    _Auto Save View-Once Media_
  │
- │ ➭ *%[3]santicall* [on/off]
+ │ 📵 *%[3]santicall* [on/off]
  │    _Auto Block Incoming Calls_
  │
- │ ➭ *%[3]santidm* [on/off]
+ │ 🚫 *%[3]santidm* [on/off]
  │    _Auto Block Unsaved DMs_
- │ 
+ │
  ╰──────────────────────╯
- 
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ 🎨 𝗘𝗗𝗜𝗧𝗜𝗡𝗚 𝗭𝗢𝗡𝗘 🎨 ] ──╮
  │ 
- │ ➭ *%[3]ss* / *%[3]ssticker* [reply image]
+ │ 🎭 *%[3]ss / %[3]ssticker* [reply image]
  │    _Convert Image to Sticker_
  │
- │ ➭ *%[3]stoimg* [reply sticker]
+ │ 🖼️ *%[3]stoimg* [reply sticker]
  │    _Convert Sticker to Image_
  │
- │ ➭ *%[3]stogif* [reply sticker]
+ │ 🎞️ *%[3]stogif* [reply sticker]
  │    _Convert Sticker to GIF_
  │
- │ ➭ *%[3]stovideo* [reply sticker]
+ │ 🎬 *%[3]stovideo* [reply sticker]
  │    _Convert Sticker to Video_
  │
- │ ➭ *%[3]stourl* [reply media]
+ │ 🔗 *%[3]stourl* [reply media]
  │    _Upload Media to Link_
  │
- │ ➭ *%[3]stoptt* [reply audio]
- │    _Convert Text to Voice Note_
+ │ 🎵 *%[3]stoptt* [reply audio]
+ │    _Convert Audio to Voice Note_
  │
- │ ➭ *%[3]sfancy* [text]
+ │ ✨ *%[3]sfancy* [text]
  │    _Generate Fancy Fonts_
- │ 
+ │
  ╰──────────────────────╯
- 
+❖━━━━━━━━━━━━━━━━━━━━━━❖
  ╭── ✦ [ ✨ 𝗔𝗜 𝗧𝗢𝗢𝗟𝗦 ✨ ] ──╮
  │ 
- │ ➭ *%[3]simg* [prompt]
+ │ 🎨 *%[3]simg* [prompt]
  │    _Generate AI Image_
  │
- │ ➭ *%[3]sremini* [reply img]
+ │ 💫 *%[3]sremini* [reply img]
  │    _Enhance Image Quality_
  │
- │ ➭ *%[3]sremovebg* [reply img]
+ │ 🪄 *%[3]sremovebg* [reply img]
  │    _Remove Background_
  │
- │ ➭ *%[3]str* [lang] [text]
+ │ 🌍 *%[3]str* [lang] [text]
  │    _Translate Text_
  │
- │ ➭ *%[3]sss* [website link]
+ │ 📷 *%[3]sss* [website link]
  │    _Take Website Screenshot_
  │
- │ ➭ *%[3]sgoogle* [query]
+ │ 🔍 *%[3]sgoogle* [query]
  │    _Search on Google_
  │
- │ ➭ *%[3]sweather* [city]
+ │ 🌤️ *%[3]sweather* [city]
  │    _Check City Weather_
- │ 
+ │
  ╰──────────────────────╯
+❖━━━━━━━━━━━━━━━━━━━━━━❖
+   ✨ Powered by HINA x LEGEND ✨
+❖━━━━━━━━━━━━━━━━━━━━━━❖
 
-
-  ⚡━ ✦ 💖 𝙎𝙞𝙡𝙚𝙣𝙩 𝙃𝙖𝙘𝙠𝙚𝙧𝙨 💖 ✦ ━ ⚡`, 
+  ⚡− ✦ ❤️ HINA x LEGEND 🔥 ✦ − ⚡`, 
 	strings.ToUpper(settings.Mode), uptimeStr, settings.Prefix)
 
 	client.SendMessage(context.Background(), v.Info.Chat, &waProto.Message{
@@ -2059,7 +2066,7 @@ func handleSendButtons(client *whatsmeow.Client, v *events.Message) {
 			Text: proto.String("🔗 *JOIN OUR COMMUNITIES*\n\nTap the buttons below to join our WhatsApp and Telegram groups."),
 		},
 		Footer: &waE2E.InteractiveMessage_Footer{
-			Text: proto.String("HINA x LEGEND Official!"),
+			Text: proto.String("HINA x LEGEND Official! ❤️🔥"),
 		},
 		InteractiveMessage: &waE2E.InteractiveMessage_NativeFlowMessage_{
 			NativeFlowMessage: &waE2E.InteractiveMessage_NativeFlowMessage{
