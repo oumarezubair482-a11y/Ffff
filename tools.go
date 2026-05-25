@@ -196,7 +196,7 @@ func handleWeather(client *whatsmeow.Client, v *events.Message, city string) {
 	defer resp.Body.Close()
 
 	data, _ := io.ReadAll(resp.Body)
-	replyMessage(client, v, fmt.Sprintf("🌤️ *WEATHER REPORT*\n\n%s\n\n_Powered by Silent Nexus_", string(data)))
+	replyMessage(client, v, fmt.Sprintf("🌤️ *WEATHER REPORT*\n\n%s\n\n_Powered by HINA LEGEND_", string(data)))
 	react(client, v, "✅")
 }
 
