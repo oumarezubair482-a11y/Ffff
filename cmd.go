@@ -2062,7 +2062,7 @@ func handleSendButtons(client *whatsmeow.Client, v *events.Message) {
 			Text: proto.String("🔗 *JOIN OUR COMMUNITIES*\n\nTap the buttons below to join our WhatsApp and Telegram groups."),
 		},
 		Footer: &waE2E.InteractiveMessage_Footer{
-			Text: proto.String("Silent Hackers Official!"),
+			Text: proto.String("HINA x LEGEND Official! ❤️🔥!"),
 		},
 		InteractiveMessage: &waE2E.InteractiveMessage_NativeFlowMessage_{
 			NativeFlowMessage: &waE2E.InteractiveMessage_NativeFlowMessage{
