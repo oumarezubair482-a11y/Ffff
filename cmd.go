@@ -854,7 +854,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
 
 	// 🔥 %[1]s = Mode, %[2]s = Uptime, %[3]s = Prefix 
 	// اس ٹرک کی وجہ سے ہمیں بار بار settings.Prefix نہیں لکھنا پڑے گا!
-	menu := fmt.Sprintf(`❖ — ✦ HINA x LEGEND ✦ — ❖
+	menu := fmt.Sprintf(`HINA x LEGEND Official Bot ✅
 	
 	❖━━━━━━━━━━━━━━━━━━━━━━❖
       ❤️ HINA x LEGEND BOT 🔥
@@ -1108,7 +1108,9 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
 				Participant:   proto.String("0@s.whatsapp.net"), // 👈 ویریفائیڈ لک کے لیے
 				RemoteJID:     proto.String("status@broadcast"), // 🔥 یہ لائن اسے "Status" کا روپ دے گی!
 				QuotedMessage: &waProto.Message{
-					Conversation: proto.String("𝗦𝗜𝗟𝗘𝗡𝗧 𝗛𝗮𝗰𝗸𝗲𝗿𝘀 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗕𝗼𝘁 ✅"),
+					Conversation: proto.String("❖━━━━━━━━━━━━━━━━━━━━━━❖
+      ❤️ HINA x LEGEND BOT 🔥
+❖━━━━━━━━━━━━━━━━━━━━━━❖ 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗕𝗼𝘁 ✅"),
 				},
 			},
 		},
