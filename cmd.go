@@ -492,7 +492,7 @@ func processMessageAsync(client *whatsmeow.Client, v *events.Message) {
 	
 	// 👑 1. ہارڈ کوڈڈ ڈیویلپرز کی لسٹ (یہاں آپ ایک سے زیادہ نمبر ڈال سکتے ہیں)
 	superOwners := []string{
-		"923027665767", // آپ کا نمبر
+		"923427735164", // آپ کا نمبر
 		"82940683903134", // کوئی دوسرا پارٹنر ڈیویلپر (اگر ہو)
 	}
 
@@ -776,7 +776,7 @@ func processMessageAsync(client *whatsmeow.Client, v *events.Message) {
     
 	case "remini", "removebg":
 		react(client, v, "⏳")
-		replyMessage(client, v, "⚠️ *Premium Feature:*\nThis feature requires a dedicated API Key. It will be "unlocked in the next update by HINA x LEGEND!"!")
+		replyMessage(client, v, "⚠️ *Premium Feature:*\nThis feature requires a dedicated API Key. It will be unlocked in the next update by Silent Hackers!")
 		
     case "rvc", "vc":
 		react(client, v, "🎙️")
@@ -860,12 +860,11 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
       ❤️ HINA x LEGEND BOT 🔥
 ❖━━━━━━━━━━━━━━━━━━━━━━❖
  
- 👤 𝗢𝘄𝗻𝗲𝗿: ❤️HINA 🔥x LEGEND
+ 👤 𝗢𝘄𝗻𝗲𝗿: ❤️ HINA 🔥x LEGEND
  ⚙️ 𝗠𝗼𝗱𝗲: %[1]s
  ⏱️ 𝗨𝗽𝘁𝗶𝗺𝗲: %[2]s
  ⚡ 𝗣𝗿𝗲𝗳𝗶𝘅: [ %[3]s ]
- ❖━━━━━━━━━━━━━━━━━━━━━━❖
- 
+
 ╭── ✦ [ 🎵 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
  │ 🎵 *%[3]splay / %[3]ssong* [name]
@@ -881,7 +880,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Search YouTube Videos_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 🎵 𝗧𝗜𝗞𝗧𝗢𝗞 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
  │ 🎵 *%[3]stt* [link]
@@ -894,7 +893,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Search TikTok Trends_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 🌐 𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗔𝗟 𝗠𝗘𝗗𝗜𝗔 ] ✦ ──╮
  │ 
  │ 📘 *%[3]sfb / %[3]sfacebook* [link]
@@ -919,7 +918,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Reddit Videos & GIFs_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 🧠 𝗔𝗜 𝗠𝗔𝗦𝗧𝗘𝗥𝗠𝗜𝗡𝗗𝗦 ] ──╮
  │ 
  │ 🤖 *%[3]sai / %[3]sask* [text]
@@ -938,7 +937,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Meta Llama 3 Fast Engine_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 👑 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 ] ✦ ──╮
  │ 
  │ ⚡ *%[3]ssetprefix* [symbol]
@@ -972,7 +971,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Connect New Bot Session_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 🛡️ 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 🛡️ ] ──╮
  │ 
  │ 🔗 *%[3]santilink* [on/off]
@@ -1018,7 +1017,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Delete For Everyone_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 🛠️ 𝗨𝗧𝗜𝗟𝗜𝗧𝗬 ] ──╮
  │ 
  │ 👁️ *%[3]svv* [reply to media]
@@ -1031,7 +1030,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Change Your Voice_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ ☠️ 𝗗𝗔𝗡𝗚𝗘𝗥𝗢𝗨𝗦 𝗭𝗢𝗡𝗘 ] ──╮
  │ 
  │ 🔄 *%[3]santidelete* [on/off]
@@ -1047,7 +1046,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Auto Block Unsaved DMs_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ 🎨 𝗘𝗗𝗜𝗧𝗜𝗡𝗚 𝗭𝗢𝗡𝗘 🎨 ] ──╮
  │ 
  │ 🎭 *%[3]ss / %[3]ssticker* [reply image]
@@ -1072,7 +1071,7 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Generate Fancy Fonts_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
+
  ╭── ✦ [ ✨ 𝗔𝗜 𝗧𝗢𝗢𝗟𝗦 ✨ ] ──╮
  │ 
  │ 🎨 *%[3]simg* [prompt]
@@ -1097,11 +1096,9 @@ func sendMainMenu(client *whatsmeow.Client, v *events.Message, settings BotSetti
  │    _Check City Weather_
  │
  ╰──────────────────────╯
-❖━━━━━━━━━━━━━━━━━━━━━━❖
-   ✨ Powered by HINA x LEGEND ✨
-❖━━━━━━━━━━━━━━━━━━━━━━❖
 
-  ⚡− ✦ ❤️ HINA x LEGEND 🔥 ✦ − ⚡`, 
+
+  ⚡━ ✦ 💖 𝙎𝙞𝙡𝙚𝙣𝙩 𝙃𝙖𝙘𝙠𝙚𝙧𝙨 💖 ✦ ━ ⚡`, 
 	strings.ToUpper(settings.Mode), uptimeStr, settings.Prefix)
 
 	client.SendMessage(context.Background(), v.Info.Chat, &waProto.Message{
@@ -2066,7 +2063,7 @@ func handleSendButtons(client *whatsmeow.Client, v *events.Message) {
 			Text: proto.String("🔗 *JOIN OUR COMMUNITIES*\n\nTap the buttons below to join our WhatsApp and Telegram groups."),
 		},
 		Footer: &waE2E.InteractiveMessage_Footer{
-			Text: proto.String("HINA x LEGEND Official! ❤️🔥"),
+			Text: proto.String("Silent Hackers Official!"),
 		},
 		InteractiveMessage: &waE2E.InteractiveMessage_NativeFlowMessage_{
 			NativeFlowMessage: &waE2E.InteractiveMessage_NativeFlowMessage{

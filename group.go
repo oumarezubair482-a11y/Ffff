@@ -298,7 +298,7 @@ func handleVV(client *whatsmeow.Client, v *events.Message) {
 					URL: proto.String(up.URL), DirectPath: proto.String(up.DirectPath),
 					MediaKey: up.MediaKey, Mimetype: proto.String("image/jpeg"),
 					FileEncSHA256: up.FileEncSHA256, FileSHA256: up.FileSHA256,
-					FileLength: proto.Uint64(uint64(len(data))), Caption: proto.String("🔓 HINA x LEGEND"),
+					FileLength: proto.Uint64(uint64(len(data))), Caption: proto.String("✨ HINA ❤️ x 🔥 LEGEND ✨"),
 				}
 				return true
 			}
@@ -326,7 +326,7 @@ func handleVV(client *whatsmeow.Client, v *events.Message) {
 				}
 				// آڈیو کے لیے کیپشن الگ سے بھیجیں گے
 				client.SendMessage(context.Background(), v.Info.Chat, &waProto.Message{
-					Conversation: proto.String("✨ HINA ❤️ x 🔥 LEGEND ✨:"),
+					Conversation: proto.String("🔓 ✨ HINA ❤️ x 🔥 LEGEND ✨:"),
 				})
 				return true
 			}
