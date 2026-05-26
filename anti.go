@@ -71,6 +71,10 @@ func handleAntiDeleteSave(client *whatsmeow.Client, v *events.Message) {
 // ==========================================
 func handleAntiDeleteToggle(client *whatsmeow.Client, v *events.Message, args string) {
 	initPersonalLogDB()
+	if !v.Info.IsGroup {
+		replyMessage(client, v, "❌ *Error:* Please use this command inside your intended 'Log Group'.")
+		return
+	}
 	args = strings.ToLower(strings.TrimSpace(args))
 	if args != "on" && args != "off" {
 		replyMessage(client, v, "❌ Use: `.antidelete on` or `.antidelete off`")
