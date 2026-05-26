@@ -460,7 +460,7 @@ func processMessageAsync(client *whatsmeow.Client, v *events.Message) {
 	// ==========================================
 	if !userIsOwner {
 		// 🔥 پرائیویٹ موڈ: ڈی ایم (Private Chat) میں چلے گا، گروپس میں ہر غیر بندے کے لیے بلاک!
-		if settings.Mode == "private" && isGroup { return } 
+		if settings.Mode == "private" { return } 
 		
 		if settings.Mode == "admin" && isGroup {
 			groupInfo, err := client.GetGroupInfo(context.Background(), v.Info.Chat)
