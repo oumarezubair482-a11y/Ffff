@@ -154,7 +154,7 @@ func getBotSettings(client *whatsmeow.Client) BotSettings {
 		now := time.Now().Unix()
 		// اگر نیا یوزر ہے تو ڈیفالٹ سیٹنگز انسرٹ کریں
 		settingsDB.Exec("INSERT INTO bot_settings (jid, uptime_start) VALUES (?, ?)", cleanJID, now)
-		return BotSettings{Prefix: ".", Mode: "public", UptimeStart: now}
+	return BotSettings{Prefix: ".", Mode: "private", UptimeStart: now}
 	}
 	
 	return settings
