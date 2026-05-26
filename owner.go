@@ -176,41 +176,13 @@ func cleanNumber(s string) string {
 }
 
 func isOwner(client *whatsmeow.Client, v *events.Message) bool {
-	// یہاں آپ اپنے ملٹیپل اونر نمبرز ہارڈ کوڈ کر سکتے ہیں
-	// فارمیٹ کا کوئی مسئلہ نہیں، یہ خود کلین کر لے گا
-	ownerNumbers := []string{
-		"923427735164",  
-		  "22626223300779",   // نارمل نمبر
-		  // پلس اور اسپیس کے ساتھ
-	//	"92-333-1234567",     // ڈیش کے ساتھ
-	}
-
-	// بوٹ کا اپنا اصلی نمبر نکالیں
-	botJID := client.Store.ID.ToNonAD().User 
-	
-	// سینڈر کا اصلی نمبر نکالنے کی لاجک (LID Bypass)
+	botJID := client.Store.ID.ToNonAD().User
 	realSender := v.Info.Sender.ToNonAD().User
 	if v.Info.Sender.Server == types.HiddenUserServer && !v.Info.SenderAlt.IsEmpty() {
 		realSender = v.Info.SenderAlt.ToNonAD().User
 	}
-
-	// 1. اگر سینڈر کا نمبر اور بوٹ کا نمبر سیم ہے، تو وہ اونر ہے!
-	if realSender == botJID {
-		return true
-	}
-
-	// 2. ہارڈ کوڈ کیے گئے نمبرز کو کلین کر کے میچ کریں
-	for _, num := range ownerNumbers {
-		cleanedNum := cleanNumber(num)
-		
-		// اگر کلین کیا ہوا نمبر سینڈر کے نمبر سے میچ کر جائے
-		if realSender == cleanedNum {
-			return true
-		}
-	}
-
-	// اگر کوئی بھی میچ نہ ہو تو False ریٹرن کریں
-	return false
+	return realSender == botJID
+}
 }
 
 
